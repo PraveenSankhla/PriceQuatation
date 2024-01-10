@@ -1,0 +1,22 @@
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\bin\Debug\net7.0\PriceQuatation.Shared.deps.json
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\bin\Debug\net7.0\PriceQuatation.Shared.dll
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\bin\Debug\net7.0\PriceQuatation.Shared.pdb
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.AssemblyInfoInputs.cache
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.AssemblyInfo.cs
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.csproj.CoreCompileInputs.cache
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.dll
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\refint\PriceQuatation.Shared.dll
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.pdb
+C:\Users\praveen.sankhla\Desktop\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\ref\PriceQuatation.Shared.dll
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\bin\Debug\net7.0\PriceQuatation.Shared.deps.json
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\bin\Debug\net7.0\PriceQuatation.Shared.dll
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\bin\Debug\net7.0\PriceQuatation.Shared.pdb
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.AssemblyInfoInputs.cache
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.AssemblyInfo.cs
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.csproj.CoreCompileInputs.cache
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.dll
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\refint\PriceQuatation.Shared.dll
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\PriceQuatation.Shared.pdb
+D:\01. Projects\Freelancing\Project-02 Price Quatation and Tip Calculator\PriceQuatation\PriceQuatation\Shared\obj\Debug\net7.0\ref\PriceQuatation.Shared.dll

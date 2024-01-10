@@ -1,0 +1,68 @@
+﻿@page "/"
+@using PriceQuatation.Shared;
+@inject NavigationManager nav
+<PageTitle>Price Quotation</PageTitle>
+
+<div class="container">
+    <div class="card bg-success pb-4 pt-4 text-white d-flex flex-row justify-content-center align-content-center">
+        <i class="bi bi-cash fs-2"></i>
+        <h1>&nbsp; Price Quotation</h1>
+    </div>
+
+    <div class="m-1 mt-4">
+        <EditForm Model="PQ" OnValidSubmit="Calculate">
+            <DataAnnotationsValidator />
+
+            <div class="mb-3 row">
+                <label for="subtotal" class="col-sm-3 col-md-3 col-form-label">Subtotal</label>
+                <div class="col-sm-6 col-md-6">
+                    <InputNumber @bind-Value="PQ.Subtotal" id="subtotal" class="form-control" />
+                </div>
+                <span class="col-sm-3 col-md-3 text-danger"><ValidationMessage For="@(()=>PQ.Subtotal)" /></span>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="DiscountPercent" class="col-sm-3 col-md-3 col-form-label">Discount Percent</label>
+                <div class="col-sm-6 col-md-6">
+                    <InputNumber @bind-Value="PQ.DiscountPercent" id="DiscountPercent" class="form-control" />
+                </div>
+                <span class="col-sm-3 col-md-3  text-danger"><ValidationMessage For="@(()=>PQ.DiscountPercent)" /> </span>
+            </div>
+
+        <div class="mb-2 row">
+            <label for="DiscountPercent" class="col-sm-3 col-md-3  col-form-label">Discount Amount</label>
+            <span class="col-sm-3 col-md-3">$ @PQ.DiscountAmount </span>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="DiscountPercent" class="col-sm-3 col-md-3 col-form-label">Total</label>
+            <span class="col-sm-3 col-md-3">$ @PQ.TotalAmount </span>
+        </div>
+
+        <div class="col-auto">
+            <button type="submit" class="btn btn-success fs-6 mx-3">Submit</button>
+            <button type="reset" @onclick="Reset" class="btn btn-success fs-6">Clear</button>
+        </div>
+        </EditForm>
+    </div>
+</div>
+
+
+@code{
+    PriceQuatationModel PQ = new();
+
+    public async Task<PriceQuatationModel> Calculate()
+    {
+        PQ.DiscountAmount = (PQ.Subtotal*PQ.DiscountPercent)/100;
+        PQ.TotalAmount = PQ.Subtotal - PQ.DiscountAmount;
+        return PQ;
+    }
+
+    public void Reset()
+    {
+        PQ.Subtotal = 0;
+        PQ.DiscountPercent = 0;
+        PQ.DiscountAmount = 0;
+        PQ.TotalAmount = 0;
+    }
+}

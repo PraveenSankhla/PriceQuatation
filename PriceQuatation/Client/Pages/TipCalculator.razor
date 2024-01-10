@@ -1,0 +1,68 @@
+﻿@page "/TipCalculator"
+@using PriceQuatation.Shared;
+@inject NavigationManager nav
+<PageTitle>Tip Calculator</PageTitle>
+
+<div class="container">
+    <div class="card bg-success pb-4 pt-4 text-white d-flex flex-row justify-content-center align-content-center">
+        <i class="bi bi-cash fs-2"></i>
+        <h1>&nbsp; Tip Calculator</h1>
+    </div>
+
+    <div class="m-1 mt-4">
+        <EditForm Model="TCM">
+            <DataAnnotationsValidator />
+
+            <div class="mb-3 row">
+                <label for="subtotal" class="col-sm-3 col-md-3 col-form-label">Cost of meal</label>
+                <div class="col-sm-6 col-md-6">
+                    <InputNumber @bind-Value="TCM.Costofmeal" id="subtotal" class="form-control" />
+                </div>
+                <span class="col-sm-3 col-md-3 text-danger"><ValidationMessage For="@(()=>TCM.Costofmeal)" /></span>
+            </div>
+
+        </EditForm>
+
+        <div class="mb-2 row">
+            <label for="DiscountPercent" class="col-sm-3 col-md-3  col-form-label">15% Tip</label>
+            <span class="col-sm-3 col-md-3">$ @TCM.DiscountPercent_15 </span>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="DiscountPercent" class="col-sm-3 col-md-3 col-form-label">20% Tip</label>
+            <span class="col-sm-3 col-md-3">$ @TCM.DiscountPercent_20 </span>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="DiscountPercent" class="col-sm-3 col-md-3 col-form-label">25% Tip</label>
+            <span class="col-sm-3 col-md-3">$ @TCM.DiscountPercent_25 </span>
+        </div>
+
+        <div class="col-auto">
+            <button type="submit" @onclick="Calculate" class="btn btn-success fs-6 mx-3">Submit</button>
+            <button type="reset" @onclick="Reset" class="btn btn-success fs-6">Clear</button>
+        </div>
+
+    </div>
+</div>
+
+
+@code {
+    TipCalculatorModel TCM = new();
+
+    public async Task<TipCalculatorModel> Calculate()
+    {
+        TCM.DiscountPercent_15 = (TCM.Costofmeal* 15) / 100;
+        TCM.DiscountPercent_20 = (TCM.Costofmeal * 20) / 100;
+        TCM.DiscountPercent_25 = (TCM.Costofmeal * 25) / 100;
+        return TCM;
+    }
+
+    public void Reset()
+    {
+        TCM.Costofmeal = 0;
+        TCM.DiscountPercent_15 = 0;
+        TCM.DiscountPercent_20 = 0;
+        TCM.DiscountPercent_25 = 0;
+    }
+}
